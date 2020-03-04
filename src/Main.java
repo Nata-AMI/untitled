@@ -1,7 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double summTicket = 48_049;
-        double mileNumber = summTicket/20;
-        System.out.println(mileNumber);
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
+        System.out.println(miles);
     }
 }
